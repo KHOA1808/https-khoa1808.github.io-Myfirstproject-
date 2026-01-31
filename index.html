@@ -2,26 +2,50 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Liên quân Mobile</title>
+    <title>Liên Quân Mobile</title>
+
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #noidung {
+            display: none;
+            color: red;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
+
     <h1>Một số game em yêu thích</h1>
-<h3>Chèn hình ảnh</h3>
-  <img src="teemee.jpg" alt="Teemee" width="300">
-  <br><br>
-  <button onclick="hienChu()">Click me!</button>
-  <p id="noidung" style="display:none; color: red;">
-    🎉 game là dễ,học IT khó !
+
+    <h3>Chèn hình ảnh</h3>
+
+    <img src="teemee.jpg" alt="Teemee" width="300">
+
+    <br><br>
+
+    <button onclick="hienChu()">Click me!</button>
+
+    <p id="noidung">
+        🎉 Game thì dễ, học IT mới khó!
     </p>
-  <script>
-    function hienChu() {
-      document.getElementById("noidung").style.display = "block";
+
     <p>Dưới đây là một số game nổi bật:</p>
 
     <ul>
         <li>
             <a href="https://lienquan.garena.vn/" target="_blank">
-                Liên quân Mobile
+                Liên Quân Mobile
             </a>
         </li>
         <li>
@@ -35,5 +59,12 @@
             </a>
         </li>
     </ul>
+
+    <script>
+        function hienChu() {
+            document.getElementById("noidung").style.display = "block";
+        }
+    </script>
+
 </body>
 </html>
